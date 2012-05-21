@@ -9,12 +9,12 @@ using System.Windows.Forms;
 
 namespace PlaylistsBuilder
 {
-    public partial class Form1 : Form
+    public partial class fmMain : Form
     {
         PlayListXMLDoc doc;
         string Path = @"C:\Users\david\Documents\Visual Studio 2010\Projects\PlaylistsBuilder\RawFiles\iTunes Music Library.xml";
 
-        public Form1()
+        public fmMain()
         {
             InitializeComponent();
         }
@@ -33,9 +33,38 @@ namespace PlaylistsBuilder
           
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void fmMain_Load(object sender, EventArgs e)
         {
             doc = new PlayListXMLDoc();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About fmAbout = new About();
+            fmAbout.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (fbDlg.ShowDialog() == DialogResult.OK)
+            {
+                txtFolder.Text = fbDlg.SelectedPath;
+            }
         }
     }
 }

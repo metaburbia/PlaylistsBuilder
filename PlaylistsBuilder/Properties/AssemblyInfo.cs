@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("PlaylistsBuilder")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Logitech Media Server Palylist Bulder")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hewlett-Packard")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("PlaylistsBuilder")]
-[assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2012")]
+[assembly: AssemblyCopyright("Copyright © David Jones")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
