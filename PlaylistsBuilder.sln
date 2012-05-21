@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaylistsBuilder", "PlaylistsBuilder\PlaylistsBuilder.csproj", "{89231117-D509-4176-BC80-9B2472D8EE18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{19403767-AC58-4035-84CB-7CEA1464F25E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2BD822E5-553B-42A4-88D4-35D053D8CB08}"
+	ProjectSection(SolutionItems) = preProject
+		RawFiles\iTunes Music Library.xml = RawFiles\iTunes Music Library.xml
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		PlaylistsBuilder.vsmdi = PlaylistsBuilder.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = PlaylistsBuilder.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89231117-D509-4176-BC80-9B2472D8EE18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89231117-D509-4176-BC80-9B2472D8EE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89231117-D509-4176-BC80-9B2472D8EE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89231117-D509-4176-BC80-9B2472D8EE18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19403767-AC58-4035-84CB-7CEA1464F25E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19403767-AC58-4035-84CB-7CEA1464F25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19403767-AC58-4035-84CB-7CEA1464F25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19403767-AC58-4035-84CB-7CEA1464F25E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
