@@ -14,13 +14,14 @@ namespace PlaylistsBuilder
         public List<string> CurrentPlayList;
 
         public Dictionary<string, string> PlaylistNames = new Dictionary<string, string>();
+        
 
         public void LoadPlayList(string Path)
         {
             this.Load(Path);
         }
 
-        public void GetPlaylistNames()
+        public IDictionary<string,string> GetPlaylistNames()
         {
  
             PlaylistNames.Clear();
@@ -39,6 +40,7 @@ namespace PlaylistsBuilder
                         PlaylistNames.Add(PlaylistID, PlaylistName);
                     }
             }
+            return PlaylistNames;
         }
 
         public void BuildPlaylists(int n)

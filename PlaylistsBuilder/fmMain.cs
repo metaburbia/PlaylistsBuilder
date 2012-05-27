@@ -217,9 +217,14 @@ namespace PlaylistsBuilder
         private void button2_Click_1(object sender, EventArgs e)
         {
             
-            xmlFilePathDlg.InitialDirectory = Path.GetDirectoryName(txtItunesPath.Text);
+            xmlFilePathDlg.InitialDirectory =  Path.GetDirectoryName(txtItunesPath.Text);
             xmlFilePathDlg.FileName = Path.GetFileName(txtItunesPath.Text);
             xmlFilePathDlg.ShowDialog();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
     }

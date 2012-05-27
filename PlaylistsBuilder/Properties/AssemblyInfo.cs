@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PlaylistsBuilder")]
-[assembly: AssemblyDescription("Logitech Media Server Palylist Bulder")]
+[assembly: AssemblyTitle("Logitech PlaylistBuilder")]
+[assembly: AssemblyDescription("Logitech Media Server PlaylistBuilder")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PlaylistsBuilder")]
+[assembly: AssemblyProduct("PlaylistBuilder")]
 [assembly: AssemblyCopyright("Copyright © David Jones")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
