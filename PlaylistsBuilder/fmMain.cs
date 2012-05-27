@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
+using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
@@ -173,17 +173,53 @@ namespace PlaylistsBuilder
         private void btnConvert_Click(object sender, EventArgs e)
         {
             lbConvert.BeginUpdate();
+            progressConvert.Maximum = lbConvert.Items.Count;
+            progressConvert.Minimum = 0;
+            progressConvert.Value = 0;
 
-            //for (int i = 0; i< lbConvert.Items.Count;i++)
-              for (int i = 0; i< 2;i++)
+
+            progressConvert.Visible = true;
+
+            for (int i = 0; i< lbConvert.Items.Count;i++)
             {
-                IDictionary<string, string> item = (IDictionary<string, string>)lbConvert.Items[i];
-                //string id = item.k
-                List<string> Playlist = doc.BuildPlaylistFromID("62597"); 
+                try
+                {
+                    
+                    KeyValuePair<string, string> item = (KeyValuePair<string, string>)lbConvert.Items[i];
+                    List<string> Playlist = doc.BuildPlaylistFromID(item.Key);
+                    System.IO.StreamWriter file = new System.IO.StreamWriter(txtFolder.Text + Path.DirectorySeparatorChar + item.Key + "_" + item.Value + ".m3u");
+ 
+                    try
+                    {
+                         foreach (string line in Playlist)
+                        {
+                            file.WriteLine(line);
+                        }
+                    }
+                    finally
+                    {
+                        file.Close();
+                    }
+                }
+                finally
+                {
+                    progressConvert.Value = progressConvert.Value + 1;
+                    
+                }
+
+
                 lbConvert.SetSelected(i, cbSelectConvert.Checked);
             }
-
+            progressConvert.Visible = false;
             lbConvert.EndUpdate();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            
+            xmlFilePathDlg.InitialDirectory = Path.GetDirectoryName(txtItunesPath.Text);
+            xmlFilePathDlg.FileName = Path.GetFileName(txtItunesPath.Text);
+            xmlFilePathDlg.ShowDialog();
         }
 
     }
