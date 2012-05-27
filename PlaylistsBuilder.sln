@@ -7,7 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\Unit
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2BD822E5-553B-42A4-88D4-35D053D8CB08}"
 	ProjectSection(SolutionItems) = preProject
-		RawFiles\iTunes Music Library.xml = RawFiles\iTunes Music Library.xml
 		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
 		PlaylistsBuilder.vsmdi = PlaylistsBuilder.vsmdi
 	EndProjectSection
